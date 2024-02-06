@@ -2,26 +2,95 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="430"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="470"
+		Width="500" Height="470"
         x:Class="Окно_регистрации.MainWindow"
         Title="Окно регистрации">
-	<Grid ColumnDefinitions="*" RowDefinitions="Auto" Margin="0" Background="#def8f9">
-		<StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="330">
-			<TextBlock Margin="0 15" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold">Создайте свой аккаунт</TextBlock>
-			<TextBlock Margin="0 10">Имя пользователя:</TextBlock>
-			<TextBox BorderBrush="#0071bd" Background="#def8f9" Foreground="#0071bd" BorderThickness="1.4" Watermark="Введите свое имя"/>
-			<TextBlock Margin="0 10">Электронная почта:</TextBlock>
-			<TextBox BorderBrush="#0071bd" Background="#def8f9" Foreground="#0071bd" BorderThickness="1.4" Watermark="Введите свой E-mail"/>
-			<TextBlock Margin="0 10">Пароль:</TextBlock>
-			<TextBox PasswordChar="*" BorderBrush="#0071bd" Background="#def8f9" Foreground="#0071bd" BorderThickness="1.4" Watermark="Придумайте и введите пароль"/>
-			<CheckBox Margin="0 10" BorderBrush="#5f96ae">
-				<TextBlock Margin="0 7">
-					Я принимаю условия пользовательского
-					соглашения и даю согласие на обработку
-					персональных данных
+	<Grid
+		ShowGridLines="False"
+		ColumnDefinitions="70,*,70"
+		RowDefinitions="Auto"
+		Margin="0">
+		<Grid.Background>
+			<LinearGradientBrush StartPoint="0,470" EndPoint="500,0">
+				<GradientStop Color="#E2FCFA" Offset="0.1"></GradientStop>
+				<GradientStop Color="#C6E7F2" Offset="0.7"></GradientStop>
+				<GradientStop Color="#9FCEE7" Offset="0.9"></GradientStop>
+			</LinearGradientBrush>
+		</Grid.Background>
+		<StackPanel
+			Grid.Column="1"
+			Margin="20"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+			Width="330">
+			<TextBlock
+				Margin="0 15"
+				HorizontalAlignment="Center"
+				FontSize="18"
+				FontWeight="Bold">
+				Create your account
+			</TextBlock>
+			<TextBlock
+				Margin="0 23 0 10">
+				Name
+			</TextBlock>
+			<TextBox
+				BorderBrush="#0071bd"
+				Background="Transparent"
+				Foreground="#0071bd"
+				BorderThickness="1.4"
+				CornerRadius="0"
+				Watermark="Name"/>
+			<TextBlock
+				Margin="0 23 0 10">
+				Email Address
+			</TextBlock>
+			<TextBox
+				BorderBrush="#0071bd"
+				Background="Transparent"
+				Foreground="#0071bd"
+				BorderThickness="1.4"
+				CornerRadius="0"
+				Watermark="Enter email"/>
+			<TextBlock
+				Margin="0 23 0 10">
+				Password
+			</TextBlock>
+			<TextBox
+				PasswordChar="*"
+				BorderBrush="#0071bd"
+				Background="Transparent"
+				Foreground="#0071bd"
+				BorderThickness="1.4"
+				CornerRadius="0"
+				Watermark="Password"/>
+			<StackPanel 
+				Orientation="Horizontal">
+				<CheckBox
+					Margin="0 23 0 23"
+					BorderBrush="#5f96ae">
+					<TextBlock
+						Margin="0 7">
+						Accept our
+					</TextBlock>
+				</CheckBox>
+				<TextBlock
+					Margin="2 36"
+					Foreground="#006BC2">
+					Terms and Conditions
 				</TextBlock>
-			</CheckBox>
-			<Button Margin="0 -5" HorizontalAlignment="Center" Background="#0071bd" Foreground="White" Width="330" HorizontalContentAlignment="Center">Создать Бесплатный Аккаунт</Button>
+			</StackPanel>
+			<Button
+				Margin="0 -5"
+				HorizontalAlignment="Center"
+				Background="#006BC2"
+				Foreground="White"
+				Width="330"
+				CornerRadius="0"
+				HorizontalContentAlignment="Center">
+				Create Free Account
+			</Button>
 		</StackPanel>
 	</Grid>
 </Window>
