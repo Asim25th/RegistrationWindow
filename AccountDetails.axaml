@@ -1,0 +1,60 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="470"
+		Width="500" Height="470"
+        x:Class="RegistrationWindow.AccountDetails"
+        Title="Created Account Details">
+	<Grid
+		ShowGridLines="False"
+		ColumnDefinitions="70,*,70"
+		RowDefinitions="Auto"
+		Margin="0">
+		<Grid.Background>
+			<LinearGradientBrush StartPoint="0,470" EndPoint="500,0">
+				<GradientStop Color="#E2FCFA" Offset="0.1"></GradientStop>
+				<GradientStop Color="#C6E7F2" Offset="0.7"></GradientStop>
+				<GradientStop Color="#9FCEE7" Offset="0.9"></GradientStop>
+			</LinearGradientBrush>
+		</Grid.Background>
+		<StackPanel
+			Grid.Column="1"
+			Margin="20"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+			Width="330">
+			<TextBlock
+				Margin="0 15"
+				HorizontalAlignment="Center"
+				FontSize="18"
+				FontWeight="Bold">
+				Account Details
+			</TextBlock>
+			<TextBlock
+				Margin="0 23 0 10">
+				Name
+			</TextBlock>
+			<TextBlock
+				Name="NameOutput"
+				Margin="0 3 0 15"
+				Foreground="#0071bd"/>
+			<TextBlock
+				Margin="0 23 0 10">
+				Email Address
+			</TextBlock>
+			<TextBlock
+				Name="EmailAddressOutput"
+				Margin="0 3 0 15"
+				Foreground="#0071bd"/>
+			<TextBlock
+				Margin="0 23 0 10">
+				Password
+			</TextBlock>
+			<TextBlock
+				Name="PasswordOutput"
+				Margin="0 3 0 15"
+				Foreground="#0071bd"/>
+		</StackPanel>
+	</Grid>
+</Window>

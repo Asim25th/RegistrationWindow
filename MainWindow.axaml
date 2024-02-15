@@ -4,8 +4,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="470"
 		Width="500" Height="470"
-        x:Class="Окно_регистрации.MainWindow"
-        Title="Окно регистрации">
+        x:Class="RegistrationWindow.MainWindow"
+        Title="Registration Window">
 	<Grid
 		ShowGridLines="False"
 		ColumnDefinitions="70,*,70"
@@ -13,9 +13,9 @@
 		Margin="0">
 		<Grid.Background>
 			<LinearGradientBrush StartPoint="0,470" EndPoint="500,0">
-				<GradientStop Color="#E2FCFA" Offset="0.1"></GradientStop>
-				<GradientStop Color="#C6E7F2" Offset="0.7"></GradientStop>
-				<GradientStop Color="#9FCEE7" Offset="0.9"></GradientStop>
+				<GradientStop Color="#e2fcfa" Offset="0.1"></GradientStop>
+				<GradientStop Color="#c6e7f2" Offset="0.7"></GradientStop>
+				<GradientStop Color="#9fcee7" Offset="0.9"></GradientStop>
 			</LinearGradientBrush>
 		</Grid.Background>
 		<StackPanel
@@ -36,6 +36,7 @@
 				Name
 			</TextBlock>
 			<TextBox
+				Name="NameInput"
 				BorderBrush="#0071bd"
 				Background="Transparent"
 				Foreground="#0071bd"
@@ -47,6 +48,7 @@
 				Email Address
 			</TextBlock>
 			<TextBox
+				Name="EmailAddressInput"
 				BorderBrush="#0071bd"
 				Background="Transparent"
 				Foreground="#0071bd"
@@ -58,6 +60,7 @@
 				Password
 			</TextBlock>
 			<TextBox
+				Name="PasswordInput"
 				PasswordChar="*"
 				BorderBrush="#0071bd"
 				Background="Transparent"
@@ -82,6 +85,7 @@
 				</TextBlock>
 			</StackPanel>
 			<Button
+				Click="CreateFreeAccountButton"
 				Margin="0 -5"
 				HorizontalAlignment="Center"
 				Background="#006BC2"

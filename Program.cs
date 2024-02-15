@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace Окно_регистрации
+namespace RegistrationWindow
 {
     internal class Program
     {

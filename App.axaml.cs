@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace Окно_регистрации
+namespace RegistrationWindow
 {
     public partial class App : Application
     {
